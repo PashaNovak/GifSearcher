@@ -13,12 +13,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".mvp.presentation.view.implementation.activity.MainActivity"
-            android:windowSoftInputMode="stateAlwaysHidden"/>
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="portrait"/>
         <activity android:name=".mvp.presentation.view.implementation.activity.SplashActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:noHistory="true"
             android:theme="@style/AppTheme.Splash"
-            android:windowSoftInputMode="adjustPan">
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
