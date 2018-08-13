@@ -10,6 +10,6 @@ git clone https://github.com/PashaNovak/GifSearcher.git
 `download archive` and
 open project in Android Studio and run 
 ## API Reference
-In the project using [Giphi API](https://developers.giphy.com/docs/)
+The project uses the [Giphy API](https://developers.giphy.com/docs/)
 ## Author
 [Novak Pavel](https://github.com/PashaNovak/)
