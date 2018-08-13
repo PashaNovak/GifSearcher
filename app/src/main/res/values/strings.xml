@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">GifSearcher</string>
+    <string name="progress_title">Wait...</string>
+    <string name="unknown_error">Unknown error!</string>
+    <string name="no_network">No network!</string>
+    <string name="search_hint">Search...</string>
+    <string name="search_ok">OK</string>
+    <string name="error_no_gifs">No gifs!</string>
 </resources>
