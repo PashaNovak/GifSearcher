@@ -1,14 +1,14 @@
 # GifSearcher
-## Summary
-Development of the GIF browser for images in which there is a possibility to search for GIF images, there is also the possibility of viewing the trends of the GIF.
+## Functionality
+* GIF search
+* Search for GIF trends
 ## Installation
-In order to run the project you need to register in the console:
+Type to console following command:
 ```
 git clone https://github.com/PashaNovak/GifSearcher.git
 ```
 **or**
-`download archive` and
-open project in Android Studio and run 
+`download the archive through the interface of the GitHub site` and run the project in Android Studio. 
 ## API Reference
 The project uses the [Giphy API](https://developers.giphy.com/docs/)
 ## Author
