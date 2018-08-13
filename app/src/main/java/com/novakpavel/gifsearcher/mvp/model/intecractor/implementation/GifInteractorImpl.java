@@ -3,6 +3,7 @@ package com.novakpavel.gifsearcher.mvp.model.intecractor.implementation;
 import com.novakpavel.gifsearcher.mvp.model.intecractor.interfaces.IGifInteractor;
 import com.novakpavel.gifsearcher.mvp.model.repository.dto.GifResponse;
 import com.novakpavel.gifsearcher.mvp.model.repository.interfaces.IGifRepository;
+import com.novakpavel.gifsearcher.utils.exceptions.ErrorHandlingUtil;
 
 import javax.inject.Inject;
 
@@ -19,11 +20,11 @@ public class GifInteractorImpl implements IGifInteractor {
 
     @Override
     public Single<GifResponse> getTrandingGifs(int limit, int offset) {
-        return mGifRepository.getTrendingGifs(limit, offset);
+        return mGifRepository.getTrendingGifs(limit, offset).onErrorResumeNext(ErrorHandlingUtil::defaultHandle);
     }
 
     @Override
     public Single<GifResponse> getSearchingGifs(String searchQuery, int limit, int offset) {
-        return mGifRepository.getSearchingGifs(searchQuery, limit, offset);
+        return mGifRepository.getSearchingGifs(searchQuery, limit, offset).onErrorResumeNext(ErrorHandlingUtil::defaultHandle);
     }
 }
